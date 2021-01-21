@@ -13,7 +13,6 @@
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-
     <!--Css-->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Desafio Startup Treek-in</title>
@@ -25,25 +24,70 @@
         <div class="contenedor row">
             <div class="col-xs-6">
                 <ul class="navbar__items">
-                    <li class="navbar__img"><img class="navbar__img--logo" src="assets/images/Logo.svg" alt=""></li>
+                    <li class="navbar__img">
+                        <object class="navbar__logo--img" data="assets/images/Logo.svg" type="image/svg+xml">
+                            <!-- Imagen alternativa si el SVG no puede cargarse -->
+                            <img src="" alt="Imagen PNG alternativa">
+                        </object>
+                    </li>
                     <li class="navbar__item"><a class="navbar__item--title" href="#">Acerca de</a></li>
                     <li class="navbar__item"><a class="navbar__item--title" href="#">Características</a></li>
                     <li class="navbar__item"><a class="navbar__item--title" href="#">Precios</a></li>
-                </ul>  
+                </ul>
             </div>
-            
+
             <div class="navbar__registro col-xs-6">
                 <ul>
                     <li class="navbar__item"><a class="navbar__item--title" href="#">Iniciar Sesión</a></li>
-                    <li class="navbar__item"><a class="navbar__item--button" type="button"  href="">Registrate</a></li>
+                    <li class="navbar__item"><a class="navbar__item--button" type="button" href="">Registrate</a></li>
                     <li class="navbar__icono"><i class="fas fa-bars fa-3x"></i></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header></header>
-    <main></main>
+    <!--Hero section-->
+    <header>
+        <section class="hero contenedor">
+            <h1 class="hero__title">Haz Trekking sin Parar</h1>
+            <p class="hero__text">Con Trekk-in te despreocuparás de la estimacion de tu viaje, ya que con unos simples pasos podrás definir
+                la mejor ruta a tomar con tus compañeros de expedición.</p>
+            <object class="hero__bg-hero" data="assets/images/bg-hero.svg" type="">
+                <img src="assets/images/bg-hero.png" alt="Imagen PNG alternativa">
+            </object>
+        </section>
+    </header>
+
+    <!--Contenido-->
+    <main>
+        <section class="graph">
+            <div class="contenedor">
+                <h2 class="graph__title">Características</h2>
+                <section class="row">
+                    <div class="col-xs-12 col-lg-6">
+                        <object class="graph__img" data="assets/images/bar-graph.svg" type="image/svg+xml">
+                            <img src="" alt="Imagen PNG alternativa">
+                        </object>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda corrupti voluptas beatae
+                        necessitatibus aspernatur provident ut autem error fugit esse tenetur tempore laboriosam,
+                        incidunt commodi nulla quam ullam, repellat repudiandae.
+                    </div>
+            </div>
+        </section>
+
+        </section>
+
+        <section class="price">
+            <h2 class="price__title">Precio</h2>
+            <object class="price__bg-price" data="assets/images/bg-price.svg" type="image/svg+xml">
+                <img src="assets/images/bg-price.png" alt="Imagen PNG alternativa">
+            </object>
+        </section>
+    </main>
+
+    <!--Pie de pagina-->
     <footer></footer>
 </body>
 

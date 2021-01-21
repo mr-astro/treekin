@@ -1,0 +1,42 @@
+.graph {
+    position:relative;
+    top: 300px;
+    z-index: 0;
+
+    @include respond-to ('md') {
+        top: 10.25rem;
+        height: 30rem;
+        background-color: yellow;
+    }
+
+    @include respond-to ('lg') {
+        top: 0;
+        height: 39rem;
+        background-color: red;
+    }
+
+    @include respond-to ('xl') {
+        top: 0;
+        height: 55rem;
+        background-color: blue;
+    }
+
+
+    &__title {
+        font-size: $font-size-xx-large;
+        font-weight: $primary-font-bold;
+        text-align: center;
+    }
+}
+
+.price {
+    
+    &__bg-price {
+        position:relative;
+        top: 500px;
+        left: 0;
+        width: 100%;
+        z-index: -5;
+        background-color: red;
+    }
+}
