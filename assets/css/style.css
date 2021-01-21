@@ -438,31 +438,46 @@ input {
 }
 .hero__bg-hero {
   position: absolute;
-  top: 1.25rem;
+  top: 11rem;
   left: 0px;
   width: 100%;
-  height: 40rem;
+  height: 29rem;
   z-index: -5;
+  background-color: brown;
+}
+@media (min-width: 576px) {
+  .hero__bg-hero {
+    top: 11rem;
+    height: 29rem;
+    background-color: purple;
+  }
 }
 @media (min-width: 768px) {
   .hero__bg-hero {
-    top: 10.25rem;
-    height: 30rem;
+    top: 11.25rem;
+    height: 38rem;
     background-color: yellow;
   }
 }
 @media (min-width: 992px) {
   .hero__bg-hero {
     top: 4.25rem;
-    height: 39rem;
+    height: 45rem;
     background-color: red;
   }
 }
 @media (min-width: 1200px) {
   .hero__bg-hero {
-    top: 5.25rem;
+    top: 4.25rem;
     height: 55rem;
     background-color: blue;
+  }
+}
+@media (min-width: 1400px) {
+  .hero__bg-hero {
+    top: 4.25rem;
+    height: 57rem;
+    background-color: green;
   }
 }
 .hero__title {
@@ -488,43 +503,108 @@ input {
 
 .graph {
   position: relative;
-  top: 300px;
-  z-index: 0;
+  top: 26rem;
+  height: 35rem;
+  text-align: center;
+  background-color: brown;
+}
+@media (min-width: 576px) {
+  .graph {
+    top: 26rem;
+    height: 35rem;
+    text-align: center;
+    background-color: purple;
+  }
 }
 @media (min-width: 768px) {
   .graph {
-    top: 10.25rem;
+    top: 19rem;
     height: 30rem;
+    text-align: center;
     background-color: yellow;
   }
 }
 @media (min-width: 992px) {
   .graph {
-    top: 0;
-    height: 39rem;
+    top: 6rem;
+    height: 20rem;
     background-color: red;
   }
 }
 @media (min-width: 1200px) {
   .graph {
     top: 0;
-    height: 55rem;
+    height: 25rem;
     background-color: blue;
+  }
+}
+@media (min-width: 1400px) {
+  .graph {
+    top: 1rem;
+    height: 25rem;
+    background-color: green;
   }
 }
 .graph__title {
   font-size: 2.188rem;
   font-weight: 700;
   text-align: center;
+  padding: 2rem;
+}
+.graph__img {
+  padding: 2rem;
 }
 
 .price__bg-price {
-  position: relative;
-  top: 500px;
+  position: absolute;
+  top: 75.5rem;
   left: 0;
   width: 100%;
+  height: 23rem;
   z-index: -5;
-  background-color: red;
+  background-color: brown;
+}
+@media (min-width: 576px) {
+  .price__bg-price {
+    top: 76rem;
+    height: 60rem;
+    background-color: purple;
+  }
+}
+@media (min-width: 768px) {
+  .price__bg-price {
+    top: 80rem;
+    height: 40rem;
+    background-color: yellow;
+  }
+}
+@media (min-width: 992px) {
+  .price__bg-price {
+    top: 70rem;
+    height: 47rem;
+    background-color: red;
+  }
+}
+@media (min-width: 1200px) {
+  .price__bg-price {
+    top: 85.5rem;
+    height: 56rem;
+    background-color: blue;
+  }
+}
+@media (min-width: 1200px) {
+  .price__bg-price {
+    top: 87rem;
+    height: 60rem;
+    background-color: green;
+  }
+}
+
+.footer {
+  position: relative;
+  top: 100rem;
+  padding: 10rem;
+  background-color: #221d23;
 }
 
 .navbar__item--button {

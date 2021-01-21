@@ -19,28 +19,42 @@
 
     &__bg-hero{
         position: absolute;
-        top: 1.25rem;
+        top: 11rem;
         left: 0px;
         width: 100%;
-        height: 40rem;
+        height: 29rem;
         z-index: -5;
+        background-color:brown;
+        
+
+        @include respond-to ('sm') {
+            top: 11rem;
+            height: 29rem;
+            background-color: purple;
+        }
 
         @include respond-to ('md') {
-            top: 10.25rem;
-            height: 30rem;
+            top: 11.25rem;
+            height: 38rem;
             background-color: yellow;
         }
 
         @include respond-to ('lg') {
             top: 4.25rem;
-            height: 39rem;
+            height: 45rem;
             background-color: red;
         }
 
         @include respond-to ('xl') {
-            top: 5.25rem;
+            top: 4.25rem;
             height: 55rem;
             background-color: blue;
+        }
+
+        @include respond-to ('xxl') {
+            top: 4.25rem;
+            height: 57rem;
+            background-color: green;
         }
 
     }
