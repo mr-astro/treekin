@@ -428,13 +428,13 @@ input {
 @media (min-width: 992px) {
   .hero {
     height: 39rem;
-    padding: 0 50% 0 0;
+    padding: 0 30% 0 0;
   }
 }
 @media (min-width: 1200px) {
   .hero {
     height: 55rem;
-    padding: 0 50% 0 0;
+    padding: 0 30% 0 0;
   }
 }
 .hero__bg-hero {
@@ -496,9 +496,15 @@ input {
   }
 }
 .hero__text {
+  padding: 1rem 0;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 2.188rem;
+}
+@media (min-width: 768px) {
+  .hero__text {
+    font-size: 1.875rem;
+  }
 }
 
 .graph {
@@ -563,13 +569,25 @@ input {
   padding: 1rem 0;
 }
 .graph__text--paragraph {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 2.188rem;
+  line-height: 1.9rem;
 }
 @media (min-width: 992px) {
   .graph__text--paragraph {
     line-height: 1.9rem;
+  }
+}
+.graph__svg--graf {
+  animation: graphFade 2s ease-in-out 0s infinite;
+  animation-direction: alternate;
+}
+@keyframes graphFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -685,6 +703,7 @@ input {
 }
 
 .footer {
+  font-size: 1.25rem;
   color: #fff;
   position: relative;
   top: 50rem;
@@ -692,6 +711,11 @@ input {
   background-color: #221d23;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 576px) {
+  .footer {
+    font-size: 1.875rem;
+  }
 }
 @media (min-width: 992px) {
   .footer {

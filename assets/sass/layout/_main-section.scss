@@ -66,17 +66,36 @@
         }
 
         &--paragraph {
-            font-size: $font-size-medium;
+            font-size: $font-size-large;
             font-weight: $primary-font-regular;
-            line-height : 2.188rem;
+            line-height : 1.9rem;
 
             @include respond-to ('lg') {
                 line-height : 1.9rem;
-                
             }
         }
     }
+
+    &__svg {
+        &--graf {
+            animation: graphFade 2s ease-in-out 0s infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes graphFade {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+
 }
+
+
 
 .price {
     position:relative;
