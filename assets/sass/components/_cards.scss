@@ -1,0 +1,40 @@
+.price {
+    &__tarjeta {
+        background-color: $white;
+        color: $raisingblack;
+        margin: 2rem;
+        
+        &--card-title {
+            font-size: $font-size-x-large;
+            font-weight: $primary-font-regular;
+            padding: 2rem 0 0 0;
+        }
+
+        &--card-price {
+            font-size: $font-size-xxxxx-large;
+            font-weight: $primary-font-bold;
+            padding: 2rem 0;
+            border-bottom: 1px solid $raisingblack;
+
+            @include respond-to ('lg') {
+                font-size: $font-size-xxx-large;
+            }
+            
+        }
+
+        &--items {
+            list-style-type: disc;
+            list-style-position: outside;
+            padding: 2rem;
+            border-bottom: 1px solid $raisingblack;
+        }
+
+        &--item {
+            font-family: $secondary-font;
+            font-size: $font-size-large;
+            font-weight: $primary-font-regular;
+            padding: 1rem 0;
+            
+        }
+    }
+}

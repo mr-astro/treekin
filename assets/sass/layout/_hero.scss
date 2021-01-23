@@ -25,44 +25,44 @@
         width: 100%;
         height: 29rem;
         z-index: -5;
-        background-color:brown;
+        //background-color:brown;
         
 
         @include respond-to ('sm') {
             top: 6rem;
             height: 29rem;
-            background-color: purple;
+            //background-color: purple;
         }
 
         @include respond-to ('md') {
             top: 6.25rem;
             height: 38rem;
-            background-color: yellow;
+            //background-color: yellow;
         }
 
         @include respond-to ('lg') {
             top: 0;
             height: 45rem;
-            background-color: red;
+            //background-color: red;
         }
 
         @include respond-to ('xl') {
             top: 0;
             height: 55rem;
-            background-color: blue;
+            //background-color: blue;
         }
 
         @include respond-to ('xxl') {
             top: 0;
             height: 57rem;
-            background-color: green;
+            //background-color: green;
         }
 
     }
 
     &__title {
         padding: 0.5rem 0 0 0;
-        font-size: $font-size-xx-large;
+        font-size: $font-size-xxxx-large;
         font-weight: $primary-font-bold;
 
         @include respond-to ('md') {
@@ -74,8 +74,14 @@
         }
 
         @include respond-to ('xl') {
-            padding: 15.5rem 0 0 0;
+            padding: 10.5rem 0 0 0;
         }
+    }
+
+    &__text {
+        font-size: $font-size-large;
+        font-weight: $primary-font-regular;
+        line-height : 2.188rem;
     }
     
 }

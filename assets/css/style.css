@@ -444,46 +444,40 @@ input {
   width: 100%;
   height: 29rem;
   z-index: -5;
-  background-color: brown;
 }
 @media (min-width: 576px) {
   .hero__bg-hero {
     top: 6rem;
     height: 29rem;
-    background-color: purple;
   }
 }
 @media (min-width: 768px) {
   .hero__bg-hero {
     top: 6.25rem;
     height: 38rem;
-    background-color: yellow;
   }
 }
 @media (min-width: 992px) {
   .hero__bg-hero {
     top: 0;
     height: 45rem;
-    background-color: red;
   }
 }
 @media (min-width: 1200px) {
   .hero__bg-hero {
     top: 0;
     height: 55rem;
-    background-color: blue;
   }
 }
 @media (min-width: 1400px) {
   .hero__bg-hero {
     top: 0;
     height: 57rem;
-    background-color: green;
   }
 }
 .hero__title {
   padding: 0.5rem 0 0 0;
-  font-size: 2.188rem;
+  font-size: 2.813rem;
   font-weight: 700;
 }
 @media (min-width: 768px) {
@@ -498,52 +492,51 @@ input {
 }
 @media (min-width: 1200px) {
   .hero__title {
-    padding: 15.5rem 0 0 0;
+    padding: 10.5rem 0 0 0;
   }
+}
+.hero__text {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2.188rem;
 }
 
 .graph {
   position: relative;
-  top: 35rem;
+  top: 34rem;
   height: 35rem;
   text-align: center;
-  background-color: brown;
 }
 @media (min-width: 576px) {
   .graph {
-    top: 35rem;
+    top: 34rem;
     height: 35rem;
     text-align: center;
-    background-color: purple;
   }
 }
 @media (min-width: 768px) {
   .graph {
-    top: 19rem;
+    top: 18rem;
     height: 30rem;
     text-align: center;
-    background-color: yellow;
   }
 }
 @media (min-width: 992px) {
   .graph {
-    top: 7rem;
+    top: 6rem;
     height: 20rem;
-    background-color: red;
   }
 }
 @media (min-width: 1200px) {
   .graph {
     top: 0;
     height: 25rem;
-    background-color: blue;
   }
 }
 @media (min-width: 1400px) {
   .graph {
     top: 1rem;
     height: 25rem;
-    background-color: green;
   }
 }
 .graph__title {
@@ -552,33 +545,57 @@ input {
   text-align: center;
   padding: 2rem;
 }
-.graph__img {
+.graph__svg {
   padding: 2rem;
+}
+.graph__text {
+  padding: 2rem 0;
+  text-align: left;
+}
+@media (min-width: 992px) {
+  .graph__text {
+    padding: 0;
+  }
+}
+.graph__text--title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+.graph__text--paragraph {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.188rem;
+}
+@media (min-width: 992px) {
+  .graph__text--paragraph {
+    line-height: 1.9rem;
+  }
 }
 
 .price {
   position: relative;
-  top: 35rem;
+  top: 34rem;
   left: 0;
 }
 @media (min-width: 576px) {
   .price {
-    top: 36rem;
+    top: 34rem;
   }
 }
 @media (min-width: 768px) {
   .price {
-    top: 20rem;
+    top: 18rem;
   }
 }
 @media (min-width: 992px) {
   .price {
-    top: 8rem;
+    top: 6rem;
   }
 }
 @media (min-width: 1200px) {
   .price {
-    top: 0.5rem;
+    top: 0rem;
   }
 }
 @media (min-width: 1400px) {
@@ -593,88 +610,160 @@ input {
   width: 100%;
   height: 25rem;
   z-index: -6;
-  background-color: brown;
 }
 @media (min-width: 576px) {
   .price__bg-price {
     top: 0rem;
     height: 33rem;
-    background-color: purple;
   }
 }
 @media (min-width: 768px) {
   .price__bg-price {
     top: 0;
     height: 40rem;
-    background-color: yellow;
   }
 }
 @media (min-width: 992px) {
   .price__bg-price {
     top: 0;
     height: 47rem;
-    background-color: red;
   }
 }
 @media (min-width: 1200px) {
   .price__bg-price {
     top: 0;
-    height: 56rem;
-    background-color: blue;
+    height: 55rem;
   }
 }
 @media (min-width: 1400px) {
   .price__bg-price {
     top: 0;
     height: 60rem;
-    background-color: green;
   }
 }
-.price__tarjeta {
+.price__titulo {
   position: relative;
-  top: 23rem;
+  top: 15rem;
+  color: #fff;
+  text-align: center;
+  font-size: 2.188rem;
+  font-weight: 700;
+}
+.price__card {
+  position: relative;
+  top: 18rem;
   left: 0;
   background-color: #333745;
-  padding: 30% 0;
+  height: 100rem;
   z-index: -5;
 }
 @media (min-width: 576px) {
-  .price__tarjeta {
-    top: 31rem;
+  .price__card {
+    top: 25rem;
   }
 }
 @media (min-width: 768px) {
-  .price__tarjeta {
-    top: 39rem;
+  .price__card {
+    top: 32rem;
   }
 }
 @media (min-width: 992px) {
-  .price__tarjeta {
-    top: 41rem;
+  .price__card {
+    top: 20rem;
+    height: 55rem;
   }
 }
 @media (min-width: 1200px) {
-  .price__tarjeta {
-    top: 55rem;
+  .price__card {
+    top: 20rem;
   }
 }
 @media (min-width: 1400px) {
-  .price__tarjeta {
-    top: 55rem;
+  .price__card {
+    top: 20rem;
   }
 }
 
 .footer {
+  color: #fff;
   position: relative;
-  top: 100rem;
-  padding: 10rem;
+  top: 50rem;
+  padding: 3rem;
   background-color: #221d23;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .footer {
+    top: 19rem;
+  }
+}
+.footer__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__span {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .footer__span {
+    text-align: right;
+  }
+}
+.footer__items, .footer__span {
+  padding: 2rem 0;
 }
 
 .navbar__item--button {
   background-color: #2ab7ca;
   color: #fff;
   padding: 0.5rem 1rem;
+}
+
+.price__tarjeta--button {
+  background-color: #2ab7ca;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+.price__tarjeta a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.price__tarjeta {
+  background-color: #fff;
+  color: #221d23;
+  margin: 2rem;
+}
+.price__tarjeta--card-title {
+  font-size: 1.875rem;
+  font-weight: 400;
+  padding: 2rem 0 0 0;
+}
+.price__tarjeta--card-price {
+  font-size: 3.125rem;
+  font-weight: 700;
+  padding: 2rem 0;
+  border-bottom: 1px solid #221d23;
+}
+@media (min-width: 992px) {
+  .price__tarjeta--card-price {
+    font-size: 2.5rem;
+  }
+}
+.price__tarjeta--items {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding: 2rem;
+  border-bottom: 1px solid #221d23;
+}
+.price__tarjeta--item {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding: 1rem 0;
 }
 
 body {

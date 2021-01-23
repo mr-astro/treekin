@@ -7,3 +7,19 @@
         }
     }
 }
+
+.price {
+    &__tarjeta {
+        &--button {
+            background-color: $ballblue;
+            padding: 1rem 1rem;
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color : $white;
+        }
+    }
+}
