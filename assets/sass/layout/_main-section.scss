@@ -1,105 +1,63 @@
 .graph {
     position:relative;
-    top: 34rem;
-    height: 35rem;
-    text-align: center;
+    top: 25rem;
     //background-color: brown;
     
 
     @include respond-to ('sm') {
         top: 34rem;
-        height: 35rem;
-        text-align: center;
         //background-color: purple;
     }
 
     @include respond-to ('md') {
-        top: 18rem;
-        height: 30rem;
-        text-align: center;
+        top: 42rem;
         //background-color: yellow;
     }
 
     @include respond-to ('lg') {
-        top: 6rem;
-        height: 20rem;
+        top: 26rem;
         //background-color: red;
     }
 
     @include respond-to ('xl') {
-        top: 0;
-        height: 25rem;
+        top: 30rem;
         //background-color: blue;
     }
 
     @include respond-to ('xxl') {
-        top: 1rem;
-        height: 25rem;
+        top: 50rem;
         //background-color:green;
     }
 
 
     &__title {
-        font-size: $font-size-xx-large;
-        font-weight: $primary-font-bold;
-        text-align: center;
         padding: 2rem;
+        text-align: center;
     }
 
     &__svg {
-        padding:2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red
+
+        &--graf {
+            height: 100%;
+            width: 100%;
+        }
     }
 
     &__text {
         padding: 2rem 0;
-        text-align: left;
-
-        @include respond-to ('lg') {
-            padding: 0;
-            
-        }
-
-        &--title {
-            font-size: $font-size-large;
-            font-weight: $primary-font-bold;
-            padding: 1rem 0;
-        }
-
-        &--paragraph {
-            font-size: $font-size-large;
-            font-weight: $primary-font-regular;
-            line-height : 1.9rem;
-
-            @include respond-to ('lg') {
-                line-height : 1.9rem;
-            }
-        }
+        text-align: left;       
     }
-
-    &__svg {
-        &--graf {
-            animation: graphFade 2s ease-in-out 0s infinite;
-            animation-direction: alternate;
-        }
-
-        @keyframes graphFade {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-    }
-
 }
 
 
 
 .price {
     position:relative;
-    top: 34rem;
+    top: 25rem;
     left:0;
 
     @include respond-to ('sm') {
@@ -107,91 +65,55 @@
     }
 
     @include respond-to ('md') {
-        top: 18rem;
+        top: 42rem;
     }
 
     @include respond-to ('lg') {
-        top: 6rem;
+        top: 27rem;
     }
 
     @include respond-to ('xl') {
-        top: 0rem;
+        top: 30rem;
     }
 
     @include respond-to ('xxl') {
-        top: 0;
+        top: 50rem;
     }
     
     
     &__bg-price {
         position:absolute;
-        top: 0rem;
-        left: 0;
         width: 100%;
-        height: 25rem;
         z-index: -6;
-        //background-color:brown;
-        
-
-        @include respond-to ('sm') {
-            top: 0rem;
-            height: 33rem;
-            //background-color: purple;
-        }
-
-        @include respond-to ('md') {
-            top: 0;
-            height: 40rem;
-            //background-color: yellow;
-        }
-
-        @include respond-to ('lg') {
-            top: 0;
-            height: 47rem;
-            //background-color: red;
-        }
-
-        @include respond-to ('xl') {
-            top: 0;
-            height: 55rem;
-            //background-color: blue;
-        }
-
-        @include respond-to ('xxl') {
-            top: 0;
-            height: 60rem;
-            //background-color: green;
-        }
     }
 
     &__titulo {
         position: relative;
-        top: 15rem;
-        color: $white;
         text-align: center;
-        font-size: $font-size-xx-large;
-        font-weight: $primary-font-bold;
+        top: 8rem;
+
+        @include respond-to ('md') {
+            top: 16rem;
+        }
     }
 
     &__card {
         position:relative;
-        top: 18rem;
+        top: 13rem;
         left: 0;
         background-color:$licorice;
-        height: 100rem;
         z-index: -5;
 
         @include respond-to ('sm') {
-            top: 25rem;
+            top: 20rem;
         }
 
         @include respond-to ('md') {
-            top: 32rem;
+            top: 27rem;
         }
 
         @include respond-to ('lg') {
             top: 20rem;
-            height: 55rem;
         }
 
         @include respond-to ('xl') {

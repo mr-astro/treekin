@@ -45,12 +45,137 @@ input {
   border-radius: 0;
 }
 
+.navbar__item--title, .navbar__item--button {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #221d23;
+}
+
+.hero__title {
+  font-size: 2.813rem;
+  font-weight: 700;
+}
+.hero__text {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2.188rem;
+}
+@media (min-width: 768px) {
+  .hero__text {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__text {
+    font-size: 2.188rem;
+  }
+}
+
+.graph__title {
+  font-size: 2.188rem;
+  font-weight: 700;
+}
+@media (min-width: 1200px) {
+  .graph__title {
+    font-size: 2.813rem;
+  }
+}
+.graph__text--title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+}
+@media (min-width: 1200px) {
+  .graph__text--title {
+    font-size: 2.188rem;
+    line-height: 3rem;
+  }
+}
+.graph__text--paragraph {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+}
+@media (min-width: 992px) {
+  .graph__text--paragraph {
+    line-height: 2.1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .graph__text--paragraph {
+    font-size: 1.875rem;
+    line-height: 2.6rem;
+  }
+}
+
+.price__titulo {
+  color: #fff;
+  font-size: 2.188rem;
+  font-weight: 700;
+}
+@media (min-width: 1200px) {
+  .price__titulo {
+    font-size: 3.125rem;
+  }
+}
+@media (min-width: 1200px) {
+  .price__card {
+    padding: 5rem 0;
+  }
+}
+.price__tarjeta--card-title {
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+.price__tarjeta--card-price {
+  font-size: 3.125rem;
+  font-weight: 700;
+}
+@media (min-width: 992px) {
+  .price__tarjeta--card-price {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .price__tarjeta--card-price {
+    font-size: 3.125rem;
+  }
+}
+.price__tarjeta--item {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.footer {
+  font-size: 1.25rem;
+  color: #fff;
+}
+@media (min-width: 576px) {
+  .footer {
+    font-size: 1.875rem;
+  }
+}
+
+.graph__svg--graf {
+  animation: graphFade 2s ease-in-out 0s infinite;
+  animation-direction: alternate;
+}
+@keyframes graphFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .contenedor {
   width: 100%;
   margin: 0 auto;
 }
 
-@media (min-width: 1px) {
+@media (min-width: 0) {
   .contenedor {
     width: 80%;
   }
@@ -401,9 +526,7 @@ input {
   }
 }
 .navbar__item--title, .navbar__item--button {
-  text-decoration: none;
   padding: 0 1rem;
-  color: #221d23;
 }
 .navbar__icono {
   display: contents;
@@ -414,71 +537,39 @@ input {
   }
 }
 
-.hero {
-  position: relative;
-  height: 1rem;
-  padding: 0 4% 0 0;
-}
-@media (min-width: 768px) {
-  .hero {
-    height: 26rem;
-    padding: 0 4% 0 0;
-  }
-}
-@media (min-width: 992px) {
-  .hero {
-    height: 39rem;
-    padding: 0 30% 0 0;
-  }
-}
-@media (min-width: 1200px) {
-  .hero {
-    height: 55rem;
-    padding: 0 30% 0 0;
-  }
-}
 .hero__bg-hero {
   position: absolute;
-  top: 6rem;
-  left: 0px;
+  top: 26rem;
   width: 100%;
-  height: 29rem;
   z-index: -5;
 }
 @media (min-width: 576px) {
   .hero__bg-hero {
-    top: 6rem;
-    height: 29rem;
+    top: 22rem;
   }
 }
 @media (min-width: 768px) {
   .hero__bg-hero {
-    top: 6.25rem;
-    height: 38rem;
+    top: 22rem;
   }
 }
 @media (min-width: 992px) {
   .hero__bg-hero {
-    top: 0;
-    height: 45rem;
+    top: 7rem;
   }
 }
 @media (min-width: 1200px) {
   .hero__bg-hero {
-    top: 0;
-    height: 55rem;
+    top: 5rem;
   }
 }
 @media (min-width: 1400px) {
   .hero__bg-hero {
-    top: 0;
-    height: 57rem;
+    top: 5rem;
   }
 }
 .hero__title {
-  padding: 0.5rem 0 0 0;
-  font-size: 2.813rem;
-  font-weight: 700;
+  padding: 3rem 0 0 0;
 }
 @media (min-width: 768px) {
   .hero__title {
@@ -492,108 +583,62 @@ input {
 }
 @media (min-width: 1200px) {
   .hero__title {
-    padding: 10.5rem 0 0 0;
+    padding: 5.5rem 0 0 0;
   }
 }
 .hero__text {
   padding: 1rem 0;
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 2.188rem;
-}
-@media (min-width: 768px) {
-  .hero__text {
-    font-size: 1.875rem;
-  }
 }
 
 .graph {
   position: relative;
-  top: 34rem;
-  height: 35rem;
-  text-align: center;
+  top: 25rem;
 }
 @media (min-width: 576px) {
   .graph {
     top: 34rem;
-    height: 35rem;
-    text-align: center;
   }
 }
 @media (min-width: 768px) {
   .graph {
-    top: 18rem;
-    height: 30rem;
-    text-align: center;
+    top: 42rem;
   }
 }
 @media (min-width: 992px) {
   .graph {
-    top: 6rem;
-    height: 20rem;
+    top: 26rem;
   }
 }
 @media (min-width: 1200px) {
   .graph {
-    top: 0;
-    height: 25rem;
+    top: 30rem;
   }
 }
 @media (min-width: 1400px) {
   .graph {
-    top: 1rem;
-    height: 25rem;
+    top: 50rem;
   }
 }
 .graph__title {
-  font-size: 2.188rem;
-  font-weight: 700;
-  text-align: center;
   padding: 2rem;
+  text-align: center;
 }
 .graph__svg {
-  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red .graph__svg --graf;
+  background-color-height: 100%;
+  background-color-width: 100%;
 }
 .graph__text {
   padding: 2rem 0;
   text-align: left;
 }
-@media (min-width: 992px) {
-  .graph__text {
-    padding: 0;
-  }
-}
-.graph__text--title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  padding: 1rem 0;
-}
-.graph__text--paragraph {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.9rem;
-}
-@media (min-width: 992px) {
-  .graph__text--paragraph {
-    line-height: 1.9rem;
-  }
-}
-.graph__svg--graf {
-  animation: graphFade 2s ease-in-out 0s infinite;
-  animation-direction: alternate;
-}
-@keyframes graphFade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 .price {
   position: relative;
-  top: 34rem;
+  top: 25rem;
   left: 0;
 }
 @media (min-width: 576px) {
@@ -603,92 +648,59 @@ input {
 }
 @media (min-width: 768px) {
   .price {
-    top: 18rem;
+    top: 42rem;
   }
 }
 @media (min-width: 992px) {
   .price {
-    top: 6rem;
+    top: 27rem;
   }
 }
 @media (min-width: 1200px) {
   .price {
-    top: 0rem;
+    top: 30rem;
   }
 }
 @media (min-width: 1400px) {
   .price {
-    top: 0;
+    top: 50rem;
   }
 }
 .price__bg-price {
   position: absolute;
-  top: 0rem;
-  left: 0;
   width: 100%;
-  height: 25rem;
   z-index: -6;
-}
-@media (min-width: 576px) {
-  .price__bg-price {
-    top: 0rem;
-    height: 33rem;
-  }
-}
-@media (min-width: 768px) {
-  .price__bg-price {
-    top: 0;
-    height: 40rem;
-  }
-}
-@media (min-width: 992px) {
-  .price__bg-price {
-    top: 0;
-    height: 47rem;
-  }
-}
-@media (min-width: 1200px) {
-  .price__bg-price {
-    top: 0;
-    height: 55rem;
-  }
-}
-@media (min-width: 1400px) {
-  .price__bg-price {
-    top: 0;
-    height: 60rem;
-  }
 }
 .price__titulo {
   position: relative;
-  top: 15rem;
-  color: #fff;
   text-align: center;
-  font-size: 2.188rem;
-  font-weight: 700;
+  top: 8rem;
+}
+@media (min-width: 768px) {
+  .price__titulo {
+    top: 16rem;
+  }
 }
 .price__card {
   position: relative;
-  top: 18rem;
+  top: 13rem;
   left: 0;
   background-color: #333745;
-  height: 100rem;
   z-index: -5;
 }
 @media (min-width: 576px) {
   .price__card {
-    top: 25rem;
+    top: 20rem;
   }
 }
 @media (min-width: 768px) {
   .price__card {
-    top: 32rem;
+    top: 27rem;
   }
 }
 @media (min-width: 992px) {
   .price__card {
     top: 20rem;
-    height: 55rem;
   }
 }
 @media (min-width: 1200px) {
@@ -703,10 +715,8 @@ input {
 }
 
 .footer {
-  font-size: 1.25rem;
-  color: #fff;
   position: relative;
-  top: 50rem;
+  top: 38rem;
   padding: 3rem;
   background-color: #221d23;
   display: flex;
@@ -714,12 +724,27 @@ input {
 }
 @media (min-width: 576px) {
   .footer {
-    font-size: 1.875rem;
+    top: 54rem;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    top: 69rem;
   }
 }
 @media (min-width: 992px) {
   .footer {
-    top: 19rem;
+    top: 47rem;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    top: 50rem;
+  }
+}
+@media (min-width: 1400px) {
+  .footer {
+    top: 70rem;
   }
 }
 .footer__items {
@@ -762,20 +787,11 @@ input {
   margin: 2rem;
 }
 .price__tarjeta--card-title {
-  font-size: 1.875rem;
-  font-weight: 400;
   padding: 2rem 0 0 0;
 }
 .price__tarjeta--card-price {
-  font-size: 3.125rem;
-  font-weight: 700;
   padding: 2rem 0;
   border-bottom: 1px solid #221d23;
-}
-@media (min-width: 992px) {
-  .price__tarjeta--card-price {
-    font-size: 2.5rem;
-  }
 }
 .price__tarjeta--items {
   list-style-type: disc;
@@ -784,9 +800,6 @@ input {
   border-bottom: 1px solid #221d23;
 }
 .price__tarjeta--item {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
   padding: 1rem 0;
 }
 
