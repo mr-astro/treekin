@@ -1,5 +1,15 @@
-.navbar {
+.navbar-desktop {
     &__item {
+        &--button {
+            background-color: $ballblue;
+            color : $white;
+            padding: 0.5rem 1rem;
+        }
+    }
+}
+
+.navbar-mobile {
+    &__topnav {
         &--button {
             background-color: $ballblue;
             color : $white;

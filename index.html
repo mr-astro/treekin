@@ -13,39 +13,82 @@
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!--CDN menu desplegable-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="assets/js/script.js"></script>
+    <!--Modernizr-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+        integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw=="
+        crossorigin="anonymous"></script>
     <!--Css-->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Desafio Startup Treek-in</title>
 </head>
 
 <body>
-    <!--Barra de navegación-->
-    <nav class="navbar">
+    <!--Barra de navegación desktop-->
+    <nav class="navbar-desktop">
         <div class="contenedor">
             <div class="row">
-                <div class="col-xs-6">
-                    <ul class="navbar__items">
-                        <li class="navbar__img">
-                            <object class="navbar__logo--img" data="assets/images/Logo.svg" type="image/svg+xml">
-                                <!-- Imagen alternativa si el SVG no puede cargarse -->
+                <div class="navbar-desktop__links col-xs-7">
+                    <ul class="navbar-desktop__items">
+                        <li class="navbar-desktop__img">
+                            <object class="navbar-desktop__logo--img" data="assets/images/Logo.svg"
+                                type="image/svg+xml">
                                 <img src="" alt="Imagen PNG alternativa">
                             </object>
                         </li>
-                        <li class="navbar__item"><a class="navbar__item--title" href="#">Acerca de</a></li>
-                        <li class="navbar__item"><a class="navbar__item--title" href="#">Características</a></li>
-                        <li class="navbar__item"><a class="navbar__item--title" href="#">Precios</a></li>
+                        <li class="navbar-desktop__item"><a class="navbar-desktop__item--title" href="#">Acerca de</a>
+                        </li>
+                        <li class="navbar-desktop__item"><a class="navbar-desktop__item--title"
+                                href="#">Características</a></li>
+                        <li class="navbar-desktop__item"><a class="navbar-desktop__item--title" href="#">Precios</a>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="navbar__registro col-xs-6">
-                    <ul>
-                        <li class="navbar__item"><a class="navbar__item--title" href="#">Iniciar Sesión</a></li>
-                        <li class="navbar__item"><a class="navbar__item--button" type="button" href="">Registrate</a>
-                        </li>
-                        <li class="navbar__icono"><i class="fas fa-bars fa-3x"></i></li>
+                <div class="navbar-desktop__registro col-xs-5">
+                    <ul class="navbar-desktop__registro--items">
+                        <li class="navbar-desktop__item"><a class="navbar-desktop__item--title" href="#">Iniciar
+                                Sesión</a></li>
+                        <li class="navbar-desktop__item"><a class="navbar-desktop__item--button" type="button"
+                                href="#">Registrate</a></li>
                     </ul>
                 </div>
             </div>
+        </div>
+    </nav>
+
+    <!--Barra de navegación mobile-->
+    <nav class="navbar-mobile">
+        <div class="navbar-mobile__topnav">
+            <div class="contenedor">
+                <div class="navbar-mobile__topnav--nav">
+                    <a href="#" class="navbar-mobile__topnav--logo">
+                        <object class="navbar-mobile__logo--img" data="assets/images/Logo.svg" type="image/svg+xml">
+                            <img src="" alt="Imagen PNG alternativa">
+                        </object>
+                    </a>
+                    <a href="javascript:void(0);" class="navbar-mobile__topnav--icono" onclick="myFunction()">
+                        <i class="fa fa-bars fa-3x"></i>
+                    </a>
+                </div>
+                    <div id="misLinks" class="navbar-mobile__misLinks row">
+                        <div class="col-xs-6">
+                            <a href="#" class="navbar-mobile__topnav--item">Acerca de</a>
+                            <a href="#" class="navbar-mobile__topnav--item">Caracteristicas</a>
+                            <a href="#" class="navbar-mobile__topnav--item">Precio</a>
+                        </div>
+    
+                        <div class="navbar-mobile__registro col-xs-6">
+                            <a href="#" class="navbar-mobile__topnav--item">Iniciar Sesión</a>
+                            <a class="navbar-mobile__topnav--button" type="button" href="">Registrate</a>
+                        </div>
+                    </div>
+                
+                
+            </div>
+
         </div>
     </nav>
 

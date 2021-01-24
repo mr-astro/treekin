@@ -1,6 +1,13 @@
-.navbar {
-    width: 100%;
-    padding: 1.5% 0;
+.navbar-desktop {
+    display: none;
+
+    @include respond-to ('lg') {
+        display: contents;
+    }
+
+    &__links {
+        padding: 1rem 0;
+    }
 
     &__items {
         display: flex;
@@ -10,27 +17,73 @@
 
     &__registro {
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        justify-content: flex-end; 
+
+        &--items {
+            display: flex;
+            align-items: center;
+        }
     }
 
     &__item {
-        display:none;
-
-            @include respond-to('lg') {
-                display:contents;
-            }
         
         &--title, &--button {
+            text-decoration: none;
             padding: 0 1rem;
         }
     }
+}
 
-    &__icono {
-        display:contents;
+.navbar-mobile {
+    display: contents;
 
-        @include respond-to('lg') {
-            display:none;
+    @include respond-to ('lg') {
+        display: none;
+    }
+
+    &__topnav {
+        overflow: hidden;
+        background-color:$white;
+        display: inline;
+
+        &--item {
+            color: $raisingblack;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: inline-block;
+
+            &:hover {
+                background-color: #ddd;
+                color: black;
+            }
         }
+
+        &--button, &--icono {
+            text-decoration: none;
+        }
+
+        &--icono {
+            color:$raisingblack;
+        }
+
+        &--nav {
+            display: flex;
+            align-items: row;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+    }
+
+    &__topnav #myLinks {
+        display: none;
+    }
+
+    &__misLinks {
+        background-color: $platinum;
+    }
+
+    &__registro {
+        text-align: left;
     }
 }

@@ -45,7 +45,7 @@ input {
   border-radius: 0;
 }
 
-.navbar__item--title, .navbar__item--button {
+.navbar-desktop__item--title, .navbar-desktop__item--button {
   font-size: 1.25rem;
   text-decoration: none;
   color: #221d23;
@@ -503,38 +503,79 @@ input {
     grid-column: span 1;
   }
 }
-.navbar {
-  width: 100%;
-  padding: 1.5% 0;
+.navbar-desktop {
+  display: none;
 }
-.navbar__items {
+@media (min-width: 992px) {
+  .navbar-desktop {
+    display: contents;
+  }
+}
+.navbar-desktop__links {
+  padding: 1rem 0;
+}
+.navbar-desktop__items {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.navbar__registro {
+.navbar-desktop__registro {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
 }
-.navbar__item {
-  display: none;
+.navbar-desktop__registro--items {
+  display: flex;
+  align-items: center;
 }
-@media (min-width: 992px) {
-  .navbar__item {
-    display: contents;
-  }
-}
-.navbar__item--title, .navbar__item--button {
+.navbar-desktop__item--title, .navbar-desktop__item--button {
+  text-decoration: none;
   padding: 0 1rem;
 }
-.navbar__icono {
+
+.navbar-mobile {
   display: contents;
 }
 @media (min-width: 992px) {
-  .navbar__icono {
+  .navbar-mobile {
     display: none;
   }
+}
+.navbar-mobile__topnav {
+  overflow: hidden;
+  background-color: #fff;
+  display: inline;
+}
+.navbar-mobile__topnav--item {
+  color: #221d23;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
+}
+.navbar-mobile__topnav--item:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar-mobile__topnav--button, .navbar-mobile__topnav--icono {
+  text-decoration: none;
+}
+.navbar-mobile__topnav--icono {
+  color: #221d23;
+}
+.navbar-mobile__topnav--nav {
+  display: flex;
+  align-items: row;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.navbar-mobile__topnav #myLinks {
+  display: none;
+}
+.navbar-mobile__misLinks {
+  background-color: #e8e8e8;
+}
+.navbar-mobile__registro {
+  text-align: left;
 }
 
 .hero__bg-hero {
@@ -764,7 +805,13 @@ input {
   padding: 2rem 0;
 }
 
-.navbar__item--button {
+.navbar-desktop__item--button {
+  background-color: #2ab7ca;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-mobile__topnav--button {
   background-color: #2ab7ca;
   color: #fff;
   padding: 0.5rem 1rem;
