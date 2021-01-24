@@ -547,9 +547,9 @@ input {
 }
 .navbar-mobile__topnav--item {
   color: #221d23;
-  padding: 14px 16px;
+  padding: 0.875rem 1rem;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.063rem;
   display: inline-block;
 }
 .navbar-mobile__topnav--item:hover {
