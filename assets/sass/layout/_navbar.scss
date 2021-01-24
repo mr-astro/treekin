@@ -75,12 +75,8 @@
         }
     }
 
-    &__topnav #myLinks {
-        display: none;
-    }
-
     &__misLinks {
-        background-color: $platinum;
+        display: none;
     }
 
     &__registro {

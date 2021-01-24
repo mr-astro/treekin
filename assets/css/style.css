@@ -568,11 +568,8 @@ input {
   justify-content: space-between;
   padding: 1rem 0;
 }
-.navbar-mobile__topnav #myLinks {
-  display: none;
-}
 .navbar-mobile__misLinks {
-  background-color: #e8e8e8;
+  display: none;
 }
 .navbar-mobile__registro {
   text-align: left;
